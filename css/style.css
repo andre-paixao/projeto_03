@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+.clear{ clear:both;}
+
+header{
+    background-image: url('../img/capa.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:600px;
+    padding:50px;
+    font-weight: 300;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header nav {
+    float:right;
+    
+}
+
+nav.mobile-menu{
+    
+    display: none;
+    width:32px;
+    height:32px;
+    background-image: url('../img/menu.png');
+    background-size: 100% 100%;
+   
+}
+
+nav.mobile-menu:hover ul{
+    display:block;
+    
+}
+
+nav.mobile-menu ul{
+    display: none;
+    background-color: aliceblue;
+    position: absolute;
+    width:90%;
+    left:5%;
+    top:10px;
+    border-radius: 5px;
+    color:rgb(71,38, 99);
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li{
+    
+    border-bottom: 1px solid rgb(195, 185, 204);
+    padding:20px;
+    transition:0.4s;
+   
+}
+
+nav.mobile-menu ul li:hover{
+    
+    background-color: rgb(201, 222, 238);
+    border-radius: 5px;
+}
+
+nav.mobile-menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav.desktop-menu ul li{
+    display: inline-block;
+    padding:0 10px;
+}
+
+nav.desktop-menu li a{
+    text-decoration:none;
+    color: aliceblue;
+    transition:0.3s;
+}
+
+nav.desktop-menu li a:hover{
+    color:rgb(248, 199, 158);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+}
+
+.logo{
+    float: left;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:10%;
+    min-width: 100px;
+    height:90px;
+}
+
+.chamada{
+    padding-top: 30px;
+    margin-right: 130px;
+    width:50%;
+    height:auto;
+    float:right;
+    color:aliceblue;
+    text-shadow: 2px 2px 5px black;
+}
+
+.chamada h1{
+             font-size: 35px;
+             font-weight: 300;
+}
+
+.chamada p{ width:75%;
+            margin-top: 10px;
+            font-size: 15px;
+}
+
+.sec_descricao{
+    background-color: rgb(71,38, 99);
+    width:100%;
+    height:350px;
+    border-top: 1px solid whitesmoke;
+    color:aliceblue;
+    
+}
+
+.sec_text{
+    float:left;
+    padding:50px 0px 0px 10vw;
+    width: 60%;
+    height: 100%;
+    text-shadow: 2px 2px 5px black;
+}
+
+.sec_text h2{
+   
+   font-size: 30px;
+   font-weight: 300;
+   margin-bottom: 8px;
+   margin-top: 15px;
+}
+
+.sec_text p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 1px;
+    margin-bottom: 4px;
+}
+
+.sec_text li{
+    line-height: 20px;
+    font-size: 14px;
+    list-style-position: inside;
+}
+
+.sec_text button{
+    margin-top: 20px;
+    background-color: rgb(224, 105, 7);
+    padding:10px 15px;
+    border: 0px;
+    cursor:pointer;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.4s;
+}
+
+.sec_text button:hover{
+    padding:13px 18px;
+    font-size: 15px;
+}
+
+.sec_img {
+    float: left;
+    width: 40%;
+    height: 100%;
+    
+}
+
+.sec_img img{
+    position:relative;
+    width: 500px;
+    top:-80px;
+    left:-220px;
+    filter: drop-shadow(5px 0px 3px rgb(30, 1, 32));
+    
+}
+
+.sec_branco{
+    padding-top: 30px;
+    width: 100%;
+    
+    background-color: rgb(244, 232, 255);
+    
+  }
+
+.diferencial{
+    color: rgb(71,38, 99);
+    margin:0 auto;
+    padding:15px;
+    width:98%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.diferencial h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.diferencial p{
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.diferencial img{
+    position: relative;
+    top:40px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    width:85%;
+}
+
+.flex_mosaico{
+    display: flex;
+    width:100%;
+    height:400px;
+    
+}
+
+.divisa1{
+    display:flex;
+    justify-content: right;
+    padding:20px;
+    width:50%;
+    height:100%;
+    color: aliceblue;
+    background-color: rgb(131, 95, 168);
+}
+
+.divisa1 h4{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.divisa1 p{
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 15px;
+
+}
+
+.divisa2{
+    display: flex;
+    justify-content: left;
+    padding:20px;
+    width:50%;
+    height:100%;
+    color: rgb(43, 43, 44);
+    background-color: rgb(240, 244, 248);
+}
+
+
+.miolo1{
+    min-width: 270px;
+    max-width: 490px;
+    width: 80%;
+    padding-top: 10px;
+    margin-top: 40px;
+}
+
+.miolo2{
+    width: 80%;
+    min-width: 300px;
+    max-width: 490px;
+    padding-top:10px;
+    margin-top: 30px;
+}
+
+.slider-bullets{
+    margin:20px 0 0 10px;
+    width:100%;
+}
+
+.slider-bullets span{
+    display: inline-block;
+    width: 16px;
+    height:16px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(150,150,150);
+}
+
+
+.divisa2 h4{
+    display: inline-block;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.divisa2 p{
+    font-size: 15px;
+    line-height: 25px;
+
+}
+
+.img_aut{
+    display: inline-block;
+    position:relative;
+    top:8px;
+    left:5px;
+    width: 40px;
+    height:40px;
+    border-radius: 20px;
+    background-image: url('../img/actor1.png');
+    background-size: cover;
+    background-position: center;
+    transition:0.4s;
+}
+
+.img_aut:hover{
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+
+}
+
+.sec_endereco{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: 100%;
+    height:640px;
+    background-color: rgb(71, 38, 99);
+    
+  }
+
+.flex_wrapper1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height:100%;
+}
+
+.flex_wrapper2{
+    width: 50%;
+    height:100%;
+    padding-right:5px;
+    
+}
+
+
+.contato{
+    width: 68%;
+    min-width: 350px;
+}
+
+.contato h5{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.contato p{
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 3px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.contato input[type='text']{
+    width: 100%;
+    height:58px;
+    padding-left: 15px;
+    border-radius: 3px;
+    border: 0;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.contato textarea{
+    width: 100%;
+    height:160px;
+    padding:10px;
+    border-radius: 3px;
+    border: 0;
+    resize: none;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.contato input[type='text']:focus , .contato textarea:focus{
+    outline: 0;
+    background-color: rgb(245, 213, 172);
+}
+
+.contato input[type='submit']{
+    background-color: rgb(224, 105, 7);
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100px;
+    height:40px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+.contato input[type='submit']:hover{
+    font-size: 15px;
+    width: 110px;
+    height:50px;
+}
+
+.flex_wrapper2 h5{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+.mapa{
+     width:390px;
+     height:393px;
+}
+
+
+footer{
+    display: flex;
+    width:100%;
+    height:120px;
+    background-color: rgb(26, 33 , 36);
+    color:aliceblue;
+    font-size: 14px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (max-width:926px){
+
+    .sec_img{display: none; width: 1%;}
+    .sec_text{
+        float:none;
+        width: 99%;
+        padding:50px 0px 0px 15vw;
+    }
+
+    .mapa{
+        width:350px;
+        height:353px;
+    }
+
+    .flex_wrapper2 h5{
+        margin-top: 48px;
+    }
+
+
+}
+
+@media screen and (max-width:758px){
+
+    header{
+        padding:15px;
+        height: auto;
+        min-height: 90vh;
+          }
+
+    .chamada{
+        padding-top: 100px;
+        width:100%;
+        float:none;
+        text-align: center;
+    }
+    .chamada p{ 
+        width:100%;
+        padding:20px;
+        font-size:18px;
+               }
+
+       nav.desktop-menu{
+        display:none;
+        float:none;
+       }
+
+       nav.mobile-menu{
+        display:block;
+       
+       }
+       .logo{display: none; }
+
+       .sec_endereco{
+        display: inline-block;
+        padding:20px;
+        width: 100%;
+        height: auto; }
+
+        .flex_wrapper1{
+            padding-top: 20px;
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            text-align: center;
+
+        }
+        .contato{
+            margin:0 auto;
+        }
+
+        .flex_wrapper2{
+            text-align: center;            
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .mapa{
+            width:90%;
+            height:60vw;
+            margin:0 auto;
+        }
+
+       }
+
+       @media screen and (max-width:627px){
+
+
+         .flex_mosaico{
+            display: block;
+            height:auto;
+         }
+
+         .divisa1{
+            display: block;
+            width:100%;
+            margin:0 auto;
+         }
+
+         .miolo1{
+            text-align: center;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 10px;
+           
+        }
+
+         .divisa2{
+            display: block;
+            width:100%;
+            margin:0 auto;
+         }
+
+         .miolo2{
+            text-align: center;
+            width: 100%;
+            margin-top: 0;
+            padding-top:20px;
+            padding-bottom: 20px;
+        }
+
+        .diferencial img{
+            width:100%;
+        }
+
+        footer{
+            display: block;
+            text-align: center;
+            padding-top: 15px;
+            line-height: 30px;
+        }
+
+       }
